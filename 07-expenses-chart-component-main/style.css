@@ -1,0 +1,118 @@
+/* Import the DM Sans font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set the overall styling for the body */
+body {
+  background-color: #f7e9dc;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* Style for paragraphs */
+p {
+  color: #a7a29a;
+}
+
+/* Main content container */
+main {
+  margin: 80px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Header styling */
+header {
+  background-color: #eb755d;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+header p {
+  color: #e8e6e6;
+}
+
+/* Card styling */
+.card {
+  background-color: #fffcf7;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Styling for the bar section */
+.bar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card h1 {
+  font-size: 27px;
+}
+
+/* Week section styling */
+.week {
+  display: flex;
+  gap: 25px;
+  text-align: center;
+}
+
+/* Horizontal line styling */
+hr {
+  margin: 20px 0;
+}
+
+/* Styling for the total section */
+.total {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styling for the 'this' section */
+.this {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.last {
+  text-align: end;
+  margin-top: auto;
+}
+
+.this h1 {
+  font-size: xx-large;
+}
+
+/* Attribution section styling */
+.attribution {
+  margin-top: 20px;
+  font-size: 11px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media query for larger screens */
+@media (min-width: 600px) {
+  main {
+    width: 30%;
+    margin: 80px auto 30px auto;
+  }
+
+  .this h1 {
+    font-size: 35px;
+  }
+}
