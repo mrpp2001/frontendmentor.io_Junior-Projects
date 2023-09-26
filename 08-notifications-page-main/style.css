@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Main;
+  src: url(./assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: ExtraBold;
+  src: url(./assets/fonts/static/PlusJakartaSans-ExtraBold.ttf);
+}
+@font-face {
+  font-family: MedBold;
+  src: url(./assets/fonts/static/PlusJakartaSans-Medium.ttf);
+}
+
+body {
+  font-family: Main;
+}
+
+main {
+  padding: 12px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+p {
+  font-family: main;
+}
+
+.medBold {
+  font-family: MedBold;
+  font-weight: bold;
+  color: #575e69;
+}
+
+.medBold:hover {
+  cursor: pointer;
+  color: #2052ae;
+}
+/* ----------- Header -------------------- */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  display: flex;
+  gap: 12px;
+  font-size: 22px;
+  font-family: ExtraBold;
+}
+
+header span {
+  background-color: #0a327a;
+  color: #fff;
+  font-size: 17px;
+  padding: 1.5px 12px;
+  border-radius: 5px;
+}
+
+header p {
+  /* color: #696c70;
+  font-size: medium; */
+  cursor: pointer;
+  color: #2052ae;
+  font-weight: bold;
+}
+
+
+/* ----------- Message --------------------- */
+
+.notif {
+  display: flex;
+  border-radius: 8px;
+  padding: 15px;
+  gap: 15px;
+  position: relative;
+}
+
+.recent_notif {
+  background-color: #f6fafd;
+}
+
+.notif img {
+  width: 40px;
+  height: 40px;
+}
+
+.user_notif {
+  display: flex;
+  flex-direction: column;
+  font-size: smaller;
+  width: 70%;
+  justify-content: center;
+}
+
+.user_name {
+  font-family: ExtraBold;
+  cursor: pointer;
+}
+
+.user_name:hover{
+  color: #2052ae;
+}
+
+.time {
+  color: #979aa1;
+  margin-top: 2px;
+}
+
+.message {
+  border: 2px solid #e6e8ea;
+  padding: 13px 10px;
+  font-size: 14px;
+  width: 81%;
+  border-radius: 5px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.message:hover{
+  background-color: #E4EFF9;
+  border: 2px solid #fff;
+}
+
+.club {
+  font-family: ExtraBold;
+  color: #2052ae;
+  cursor: pointer;
+}
+
+.post {
+  border-radius: 8px;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+}
+
+.post:hover{
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.notif-dot {
+  height: 7px;
+  width: 7px;
+  background-color: #f6544f;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 1px 5px;
+}
+
+@media (min-width: 600px) {
+  body {
+    background-color: #f9fafe;
+  }
+
+  main {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 45%;
+    margin: 10px auto;
+  }
+
+  header span {
+    color: #fff;
+    font-size: 16px;
+    padding: 4px 12px;
+  }
+
+  .post {
+    margin: 0 12px;
+  }
+
+  .message {
+    width: 86%;
+    margin-right: 20px;
+  }
+
+  .user_notif {
+    width: 80%;
+  }
+}
