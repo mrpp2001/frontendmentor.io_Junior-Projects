@@ -62,3 +62,20 @@ section p {
 section h1 {
   color: #cee3ea;
 }
+
+@media (min-width: 765px) {
+  section {
+    width: 550px;
+  }
+
+  .pattern-divide {
+    width: 90%;
+    align-self: center;
+  }
+
+  .dice {
+    bottom: -25px;
+    right: 250px;
+  }
+
+}
