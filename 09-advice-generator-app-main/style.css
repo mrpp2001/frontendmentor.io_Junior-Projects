@@ -65,6 +65,7 @@ section h1 {
 
 @media (min-width: 765px) {
   section {
+    margin: 15vh auto;
     width: 550px;
   }
 
@@ -77,5 +78,6 @@ section h1 {
     bottom: -25px;
     right: 250px;
   }
+  
 
 }
