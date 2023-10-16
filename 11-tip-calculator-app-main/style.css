@@ -185,7 +185,7 @@ tip  h1{
 
   .calculator {
     width: 60vw;
-    height: 40vh;
+/*     height: 60vh; */
     flex-direction: row;
     padding: 40px;
   }
