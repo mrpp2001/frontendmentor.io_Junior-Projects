@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <header>
+      SPLI <br>
+      TTER
+    </header>
+
+    <container class="calculator">
+      <div class="left-section">
+        <div class="bill-section">
+          <span>Bill</span>
+          <p><input id="totalBill" type="number" min="0" placeholder="0"> <i class="fa-solid fa-dollar-sign" style="color: #a1bcbb;"></i></p>
+        </div>
+        <div class="tip-percentage">
+          <p>Select Tip %</p>
+          <ul id="percentage">
+            <button>5%</button>
+            <button>10%</button>
+            <button>15%</button>
+            <button>25%</button>
+            <button>50%</button>
+            <input id="customTip" class="custom" type="number" min="0"  placeholder="Custom">
+          </ul>
+        </div>
+        <div class="bill-section">
+         <p><span>Number of People</span><span id="alert">Can't be zero</span></p>
+          <p><input id="noOfPeople" type="number" min="0" placeholder="0"> <i class="fa-solid fa-user" style="color: #a1bcbb;"></i></p>
+        </div>
+      </div>
+
+      <div class="right-section">
+        <div class="tip">
+          <p><strong>Tip Amount</strong><br>
+            <span>/ person</span>
+          </p>
+          <h1 >$<span class="tipAmountPerPerson">0</span></h1>
+        </div>
+        <div class="tip">
+          <p><strong>Total</strong><br>
+            <span>/ person</span>
+          </p>
+          <h1 >$<span class="totalPerPerson">0</span></h1>
+        </div>
+        <button id="resetBtn">RESET</button>
+      </div>
+    </container>
+  </main>
+
+
+  <!-- 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/3277ba494d.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
