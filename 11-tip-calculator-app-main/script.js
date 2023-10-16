@@ -62,7 +62,7 @@ resetBtn.addEventListener("click", () => {
   totalBill.value = "";
   noOfPeople.value = "";
   customTip.value = "";
-  tipAmountPerPerson.textContent = "0";
-  totalPerPerson.textContent = "0";
+  tipAmountPerPerson.textContent = "0.00";
+  totalPerPerson.textContent = "0.00";
   selectedTipPercentage = 0; 
 });
